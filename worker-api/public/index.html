@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PollyGlot Translator</title>
+</head>
+
+<body>
+  <h1>Translator</h1>
+
+  <input id="text" placeholder="Enter text" />
+  <input id="language" placeholder="Language (e.g. French)" />
+
+  <button onclick="translateText()">Translate</button>
+
+  <h3>Result:</h3>
+  <p id="result"></p>
+
+  <script>
+    async function translateText() {
+      const text = document.getElementById("text").value;
+      const language = document.getElementById("language").value;
+
+      const response = await fetch("/translate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          text,
+          language
+        })
+      });
+
+      const data = await response.json();
+
+      document.getElementById("result").innerText =
+        data.translation || "No translation found";
+    }
+  </script>
+</body>
+</html>

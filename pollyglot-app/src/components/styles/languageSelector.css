@@ -1,0 +1,46 @@
+.language-selector {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.language-selector h3 {
+
+    color: #035A9D;
+
+    font-size: 20px;
+
+}
+
+
+.language-selector label {
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.language-selector input {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+.language-selector img {
+    width: 30px;
+}
