@@ -10,7 +10,7 @@ export default function LanguageSelector({
 }) {
   return (
     <div className="language-selector">
-      <h3>Choose language:</h3>
+      <h3>Choose language 👇</h3>
 
       <label>
         <input

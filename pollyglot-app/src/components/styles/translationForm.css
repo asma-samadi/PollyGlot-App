@@ -1,8 +1,8 @@
 .translation-form {
     width: 100%;
-    max-width: 820px;
+    max-width: none;
 
-    margin: 0 auto;
+    margin: 0;
 
     background-color: #ffffff;
 
@@ -69,5 +69,133 @@
 
 .translation-form textarea:focus {
     border-color: #035A9D;
+}
+
+
+/* Large Laptop */
+@media (max-width: 1300px) {
+
+  .translation-form {
+    max-width: 760px;
+    padding: 45px;
+    gap: 22px;
+  }
+
+  .translation-form::before {
+    inset: 8px;
+    border-width: 3px;
+  }
+
+  .translation-form label {
+    font-size: 20px;
+  }
+
+  .translation-form textarea {
+    height: 75px;
+    font-size: 16px;
+    padding: 16px;
+  }
+
+}
+
+/* Laptop / Tablet */
+@media (max-width: 1024px) {
+
+  .translation-form {
+    max-width: 680px;
+    padding: 38px;
+    gap: 20px;
+  }
+
+  .translation-form::before {
+    inset: 8px;
+  }
+
+  .translation-form label {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .translation-form textarea {
+    height: 70px;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+  .translation-form {
+    max-width: 100%;
+    padding: 30px 25px;
+    gap: 18px;
+  }
+
+  .translation-form::before {
+    inset: 6px;
+    border-width: 3px;
+  }
+
+  .translation-form label {
+    font-size: 18px;
+  }
+
+  .translation-form textarea {
+    height: 65px;
+    font-size: 15px;
+    padding: 14px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .translation-form {
+    padding: 22px 18px;
+    gap: 15px;
+  }
+
+  .translation-form::before {
+    inset: 5px;
+    border-width: 2px;
+  }
+
+  .translation-form label {
+    font-size: 16px;
+  }
+
+  .translation-form textarea {
+    height: 60px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+
+  .translation-form {
+    padding: 18px 15px;
+    gap: 12px;
+  }
+
+  .translation-form::before {
+    inset: 4px;
+  }
+
+  .translation-form label {
+    font-size: 15px;
+  }
+
+  .translation-form textarea {
+    height: 55px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
 }
 

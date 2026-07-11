@@ -1,20 +1,25 @@
 .header {
-    margin-top: 50px;
+    width: 100%;
+    margin: 50px 0 0;
+    padding: 40px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: clamp(1rem, 3vw, 3rem);
+
+    box-sizing: border-box;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    display: flex;
-    padding: 50px 0px;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
 }
 
 .header img {
-    width: 95px;
-    height: 85px;
+    width: clamp(60px, 8vw, 95px);
+    height: auto;
+    object-fit: contain;
 }
 
 .header-text {
@@ -24,19 +29,162 @@
 
 .header h1 {
     margin: 0;
+
     color: #32CD32;
+
     font-family: "Big Shoulders Display", sans-serif;
-    font-size: 43px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 .header p {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 0;
+
     color: white;
+
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
     font-weight: 600;
     line-height: 1.5;
+
+    max-width: 420px;
 }
+
+@media (max-width: 1300px) {
+
+    .header {
+
+        max-width: 760px;
+
+        gap: 5rem;
+
+        padding: 30px 20px;
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        max-width: 680px;
+
+        gap: 1.5rem;
+
+        padding: 35px 15px;
+
+    }
+
+    .header img {
+
+        width: 70px;
+
+    }
+
+    .header h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .header p {
+
+        max-width: 300px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-wrap: nowrap;
+
+        text-align: center;
+
+    }
+
+    .header-text {
+
+        align-items: center;
+
+    }
+
+    .header h1 {
+    font-size: 20px;
+}
+
+.header p {
+    font-size: 10px;
+}
+
+.header img {
+    width: 50px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+    .header {
+
+        padding: 25px 15px;
+
+        gap: 5px;
+
+    }
+
+    .header img {
+
+        width: 55px;
+
+    }
+
+    .header h1 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .header p {
+
+        max-width: 260px;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .header {
+
+        padding: 20px 10px;
+
+    }
+
+    .header img {
+
+        width: 48px;
+
+    }
+
+    .header h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    .header p {
+
+        font-size: 0.7rem;
+
+        max-width: 220px;
+
+    }
+
+}
+

@@ -1,5 +1,24 @@
 body {
-    margin: 50px 350px;
+    margin: 0px;
 
     background-color: #F5F5F5;
+}
+
+
+@media (max-width: 1300px) {
+    body {
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width:580px) {
+    body {
+        margin: 30px 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px 40px;
+    }
 }

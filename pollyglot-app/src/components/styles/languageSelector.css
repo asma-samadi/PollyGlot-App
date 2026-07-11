@@ -44,3 +44,10 @@
 .language-selector img {
     width: 30px;
 }
+
+@media (max-width: 1024px) {
+
+  .language-selector h3 {
+    text-align: center;
+  }
+}
